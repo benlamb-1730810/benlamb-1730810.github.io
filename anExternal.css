@@ -1,0 +1,27 @@
+body{
+
+  background-color: tomato;
+
+}
+
+
+
+div1 {
+    float: left;
+    height: 500px;
+    width: 500px;
+    background-color: blue;
+
+}
+
+div2 {
+  float: right;
+  border-radius: 25px;
+  height: 500px;
+  width: 500px;
+  background-color: green;
+
+
+
+
+}
