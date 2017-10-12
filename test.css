@@ -1,80 +1,42 @@
-body {
-  background-image: url('curls.png');
-  background-color: purple;
+<!DOCTYPE html>
+	<head> 
+		<title> Keith the QB  </title>
+		<link rel="stylesheet" type="text/css" href="test.css" />
+		<link href='http://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+	</head>
 
+	<body>
+		<div id = "Header">
+			<h1> Keith the QB </h1>
+		</div>
+		
+		<div id = "LeftNav">
+			<h3> My Favorite Websites </h3>
+			<ul>
+				<li><a href="https://www.theverge.com">The Verge</a></li>
+				<li><a href="https://www.surfline.com">Surfline</a></li>
+				<li><a href="https://www.worldstarhiphop">WORLD STAR</a></li>
+				<li><a href="https://www.amazon.com">Amazon</a></li>
+				<li><a href="https://www.theonion.com">The Onion</a></li>
+			</ul>
+			<img src="icon.gif" width="350px" height="200px">
+		</div>
+		
+		<div id = "Content">
+			<p> This is Keith Price's number one Fan Site! He is a good leader, wins games, throws awesome passes, hits his targets, can run when he needs to, and has a cheesy smile. Huskies have been on point this season with a starting record of 4-0. The Huskies smashed Boise State, pummeled Illinois, dominated Idaho State, and ran all over Arizona. <br /><br /> <span id="bow">Bow Down to Washington!!</span></p>
+			<img src="price.jpg">
+		</div>
+		
+		<div id = "Footer">
+			<h3>Connect With Me Online:</h3>
+			<ul>
+				<li><a href="https://www.Facebook.com">Facebook</a></li>
+				<li><a href="https://www.Linkedin.com">Linked In</a></li>
+				<li><a href="https://www.Spotify.com">Spotify Playlists</a></li>
+			</ul>
+			<p>Copyright of Keith the QB</p>
+		</div>
 
-}
+	</body>
 
-p {
-
-
-}
-
-h3 {
-
-
-}
-
-li  {
-
-
-}
-
-#leftNav a {
-  color: purple;
-  font-weight: bold;
-font-size: 24px
-}
-
-#Header {
-  width: 500px;
-  margin: 0px auto 10px auto ;
-  border: solid 8px black;
-  text-align: center;
-  background-color: gold;
-
-}
-#Header h1 {
-    font-size: 60px;
-    font-family: "passion one";
-    color: purple;
-    font-weight: bold;
-
-
-
-}
-
-#LeftNav {
-  width: 400px;
-  border: solid 8px black;
-  margin: 0px auto 10px auto ;
-  float: left;
-    text-align: center;
-    padding-bottom: 8px;
-    background-color: gold
-
-
-}
-
-#LeftNav img {
-
-
-}
-
-#Content {
-  width: 700px;
-border: solid 8px black;
-  margin: 0px auto 10px auto ;
-  text-align: center;
-  padding: 15px;
-  background-color: gold;
-
-}
-
-#Footer {
-  text-align: center;
-  color: white;
-  font-weight: bold;
-font-size: 24px
-
-}
+</html>
