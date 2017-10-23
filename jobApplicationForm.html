@@ -25,7 +25,7 @@
 		<div class="form-group">
 			<label class="col-sm-3 control-label">SSN</label>
 			<div class="col-sm-9">
-				<input class="form-control" type="text" name="email">
+				<input class="form-control" type="text" name="ssn">
 			</div>
 		</div>
 		<div class="form-group">
@@ -40,23 +40,22 @@
 				<input class="form-control" type="password" name="repeat_password">
 			</div>
 		</div>
-			<div class="form-group">
-				<label class="col-sm-3 control-label">Security Question</label>
-				<div class="col-sm-9">
-					<input class="form-control" type="text" name="email">
-				</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Security Question</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="text" name="security Question">
 			</div>
-			<div class="form-group">
-				<label class="col-sm-3 control-label">Answer</label>
-				<div class="col-sm-9">
-					<input class="form-control" type="password" name="password">
-				</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Answer</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="password" name="answer">
 			</div>
-
 		</div>
 	</fieldset>
 
 	<p>&nbsp;</p>
+
 	<fieldset class="form-horizontal" >
 		<legend>Personal Information</legend>
 		<div class="form-group">
@@ -79,7 +78,6 @@
 		</div>
 		<div class="form-group">
 			<label class="col-sm-3 control-label">State</label>
-
 			<div class="col-sm-9">
 				<select class="form-control" name="state">
 					<option value="" selected="true">Choose a State</option>
@@ -137,7 +135,6 @@
 				</select>
 			</div>
 		</div>
-
 		<div class="form-group">
 			<label class="col-sm-3 control-label">Country</label>
 			<div class="col-sm-9">
@@ -219,6 +216,53 @@
 			</div>
 		</div>
 		<div class="form-group row">
+			<label class="col-sm-12 control-label">What day or days do you prefer to be paid? (check all that apply)</label>
+			<div class="col-sm-offset-1 col-sm-11">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="monday" value="monday">
+						Monday
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="Tuesday" value="Tuesday">
+						Tuesday
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="Wednesday" value="Wednesday">
+						Wednesday
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="Thursday" value="Thursday">
+						Thursday
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="Friday" value="Friday">
+						Friday
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="Saturday" value="Saturday">
+						Saturday
+					</label>
+				</div>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="Sunday" value="Sunday">
+						Sunday
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-group row">
 			<label class="col-sm-12 control-label">Hours available</label>
 			<div class="col-sm-12">
 				<table class="table table-bordered">
@@ -255,33 +299,55 @@
 				</table>
 			</div>
 		</div>
-	</fieldset>
-	<fieldset>
-		<legend>Past Employment</legend>
+
 		<div class="form-group row">
-			<label class="col-sm-12 control-label">What was your last job and how long did you work for?</label>
-			<textarea class="form-control" name="project" rows="6"></textarea>
-			<div class="col-sm-offset-1 col-sm-11">
-				<div class="radio">
-					<label>
-						<input type="radio" name="legal" value="yes">0-1 years
-					</label>
-				</div>
-				<div class="radio">
-					<label>
-						<input type="radio" name="legal" value="no">1-2 years	</label>
-					</div>
-					<div class="radio">
-							<input type="radio" name="legal" value="no">3-4 years 	</label>
-						</div>
-						<div class="radio">
-								<input type="radio" name="legal" value="no">5+ years
-					</label>
-				</div>
+			<label class="col-sm-12 control-label">Holiday Availability</label>
+			<div class="col-sm-12">
+				<table class="table table-bordered">
+					<tr>
+						<td></td>
+						<th>New Year's Day</th>
+						<th>Birthday of Martin Luther King, Jr.</th>
+						<th>Washington's Birthday</th>
+						<th>Memorial Day</th>
+						<th>Independence Day</th>
+						<th>Labor Day</th>
+						<th>Columbus Day</th>
+						<th>Veterans Day</th>
+						<th>Thanksgiving Day</th>
+						<th>Christmas Day</th>
+					</tr>
+					<tr>
+						<th>From</th>
+						<td><input class="form-control" type="time" name="NYD_from"></td>
+						<td><input class="form-control" type="time" name="BMLK_from"></td>
+						<td><input class="form-control" type="time" name="WB_from"></td>
+						<td><input class="form-control" type="time" name="MD_from"></td>
+						<td><input class="form-control" type="time" name="ID_from"></td>
+						<td><input class="form-control" type="time" name="LD_from"></td>
+						<td><input class="form-control" type="time" name="CD_from"></td>
+						<td><input class="form-control" type="time" name="VD_from"></td>
+						<td><input class="form-control" type="time" name="TGD_from"></td>
+						<td><input class="form-control" type="time" name="CD_from"></td>
+					</tr>
+					<tr>
+						<th>Until</th>
+						<td><input class="form-control" type="time" name="NYD_until"></td>
+						<td><input class="form-control" type="time" name="BMLK_until"></td>
+						<td><input class="form-control" type="time" name="WB_until"></td>
+						<td><input class="form-control" type="time" name="MD_until"></td>
+						<td><input class="form-control" type="time" name="ID_until"></td>
+						<td><input class="form-control" type="time" name="LD_until"></td>
+						<td><input class="form-control" type="time" name="CD_until"></td>
+						<td><input class="form-control" type="time" name="VD_until"></td>
+						<td><input class="form-control" type="time" name="TGD_until"></td>
+						<td><input class="form-control" type="time" name="CD_until"></td>
+					</tr>
+				</table>
 			</div>
 		</div>
-
 	</fieldset>
+
 	<p>&nbsp;</p>
 
 	<fieldset>
@@ -291,14 +357,52 @@
 			<textarea class="form-control" name="deserve" rows="6"></textarea>
 		</div>
 		<div class="form-group">
-			<label class="control-label">Describe a recent project</label>
-			<textarea class="form-control" name="project" rows="6"></textarea>
+			<label class="control-label">How will this job help you accomplish your goals?</label>
+			<textarea class="form-control" name="goals" rows="6"></textarea>
+		</div>
+	</fieldset>
+	<fieldset>
+		<legend>Past Employment</legend>
+		<div class="form-group">
+			<label class="control-label">Where did you work before this job and what did the experience teach you?</label>
+			<textarea class="form-control" name="Wheredidyouwork" rows="6"></textarea>
+		</div>
+		<div class="form-group row">
+			<label class="col-sm-12 control-label">How many years?</label>
+			<div class="col-sm-offset-1 col-sm-11">
+				<div class="radio">
+					<label>
+						<input type="radio" name="years" value="yes">0-1
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="years" value="no">2-3
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="years" value="no">4-5
+					</label>
+				</div>
+				<div class="radio">
+					<label>
+						<input type="radio" name="years" value="no">5+
+					</label>
+				</div>
+			</div>
 		</div>
 	</fieldset>
 
+
 	<p>&nbsp;</p>
 
+
+		<input class="btn btn-primary btn-lg" type="submit" value="Save Form">
+
 	<input class="btn btn-primary btn-lg" type="submit" value="Submit form">
+
+
 
 	<p>&nbsp;</p>
 
